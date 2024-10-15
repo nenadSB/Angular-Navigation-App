@@ -1,0 +1,60 @@
+/* Hero Section Styles */
+.hero {
+    background: linear-gradient(135deg, #4a90e2, #f5a623); /* Gradient background */
+    color: white; /* Text color */
+    padding: 50px 20px; /* Padding */
+    text-align: center; /* Center text */
+    border-radius: 15px; /* Rounded corners */
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3); /* Shadow effect */
+    margin: 20px; /* Margin */
+}
+
+/* Hero Title Styles */
+.hero-title {
+    font-size: 2.8rem; /* Title font size */
+    margin-bottom: 20px; /* Space below title */
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Title shadow */
+}
+
+/* Hero Description Styles */
+.hero-description {
+    font-size: 1.2rem; /* Description font size */
+    line-height: 1.6; /* Line height */
+    max-width: 800px; /* Max width */
+    margin: 0 auto; /* Center description */
+    padding: 0 10px; /* Padding */
+}
+
+/* Call-to-Action Button Styles */
+.cta-button {
+    display: inline-block; /* Make it inline block */
+    margin-top: 30px; /* Space above button */
+    padding: 15px 30px; /* Padding */
+    font-size: 1.5rem; /* Font size */
+    color: white; /* Text color */
+    background-color: #f5a623; /* Button background */
+    border: none; /* Remove border */
+    border-radius: 8px; /* Rounded corners */
+    text-decoration: none; /* Remove underline */
+    transition: backgro
+}
+.programmer-benefits {
+    background-color: #f9f9f9; /* Light background for contrast */
+    padding: 20px;
+    margin: 40px 0; /* Space between sections */
+    border-radius: 8px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    text-align: center; /* Center the text */
+}
+
+.programmer-benefits h2 {
+    font-size: 2rem; /* Heading size */
+    color: #4a90e2; /* Heading color */
+    margin-bottom: 15px; /* Space below the heading */
+}
+
+.programmer-benefits p {
+    font-size: 1.2rem; /* Text size */
+    color: #333; /* Text color */
+    line-height: 1.6; /* Spacing between lines */
+}

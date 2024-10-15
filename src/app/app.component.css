@@ -1,0 +1,199 @@
+/* General styles for the main layout */
+.main {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #f0f4f8;
+    font-family: 'Arial', sans-serif;
+}
+
+
+/* Header styles */
+.header {
+    position: fixed;
+    top: 15px; /* Ensure it stays at the top of the viewport */
+    background-color: #4a90e2;
+    padding: 20px;
+    width: 100%;
+    text-align: center;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    
+}
+/* Static header for larger screens */
+
+
+.header-title {
+    font-size: 2.5rem;
+    color: #ffffff;
+    margin: 0;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+/* Navigation styles */
+.nav {
+    margin-top: 20px;
+}
+
+.links {
+    list-style: none; /* Remove default bullet points */
+    padding: 0; /* Remove padding */
+    display: flex; /* Arrange items in a row */
+    justify-content: center; /* Center the items */
+}
+
+.links li {
+    margin: 0 10px; /* Add spacing between links */
+}
+
+/* Styling the nav link */
+.links li a { /* Target the anchor tags inside the list items */
+    text-decoration: none; /* Remove underline */
+    color: #ffffff; /* Text color */
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 10px 20px;
+    background-color: #f5a623; /* Background color */
+    border-radius: 8px;
+    transition: background-color 0.3s, transform 0.2s, box-shadow 0.3s; /* Smooth transition for hover effects */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2); /* Add shadow */
+}
+
+/* Hover effect */
+.links li a:hover { /* Target anchor tags on hover */
+    background-color: #ffd700; /* Change background on hover */
+    transform: scale(1.05); /* Slightly enlarge */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Enhanced shadow on hover */
+}
+
+/* Style for the content below the navigation */
+.page-content {
+    margin-top: 15vh; /* Add space between the nav and the app-home content */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+}
+
+/* App home component specific styling if needed */
+app-home {
+    display: block;
+}
+.header .content {
+    display: flex; /* Make header content flexible */
+    justify-content: space-between; /* Space between nav links and hamburger */
+    align-items: center; /* Vertically center the items */
+    width: 100%;
+  }
+/* Hamburger icon styles */
+.hamburger {
+    position: fixed; /* Fix the position */
+    top: 20px;      /* Adjust the distance from the top */
+    right: 20px;    /* Adjust the distance from the right */
+    z-index: 1000;  /* Ensure it's above other content */
+    font-size: 2rem;
+    cursor: pointer;
+    background-color: #4a90e2;
+    padding: 10px;
+    border-radius: 5px;
+    color: #fff;
+    transition: background-color 0.3s ease;
+  }
+  
+  /* Change color on hover */
+  .hamburger:hover {
+    color: #ffd700; /* Change color on hover */
+  }
+  
+  /* Dropdown menu styles */
+  .dropdown-menu {
+    position: fixed;
+    display: block; /* Make the dropdown menu fixed as well */
+     top: 60px;      /* Ensure it's positioned under the hamburger icon */
+    right: 20px;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: none;  /* Hidden by default */
+    z-index: 1000;  /* Ensure it's on top of content */
+  }
+  
+  /* Show the menu when toggled */
+  .dropdown-menu.show {
+    display: block; /* Show the dropdown */
+  }
+  
+  /* Dropdown link styles */
+  .dropdown-menu a {
+    display: block; /* Stack links vertically */
+    color: #333; /* Dark text color for better visibility */
+    padding: 10px 20px; /* Padding for links */
+    text-decoration: none; /* Remove underline */
+    transition: background-color 0.3s; /* Smooth transition for hover */
+    font-weight: bold;
+  }
+  
+  /* Hover effect for dropdown links */
+  .dropdown-menu a:hover {
+    background-color: #f5a623; /* Background color on hover */
+    border-radius: 4px; /* Slight rounding for hover effect */
+  }
+
+  /*media screen*/
+  /* Hides the nav links on smaller screens and shows the hamburger icon */
+@media (max-width: 768px) {
+    .header{
+        background-color: #4a90e2;
+        position: relative;
+    }
+    .links {
+      display: none; /* Hides the links */
+    }
+  
+    .hamburger {
+      display: block; /* Shows the hamburger */
+      position: fixed; /* Stays in the top corner when scrolling */
+      top: 20px;
+      right: 20px;
+      z-index: 10;
+      font-size: 3rem; /* Adjust size of the hamburger icon */
+      color: #000000; /* White color for the hamburger icon */
+      background: none; /* Remove any background color */
+      border: none; /* Remove any borders */
+      
+    }
+  
+    /* Shows the dropdown when the hamburger is clicked */
+    .dropdown-menu {
+      position: fixed; /* Ensures the dropdown stays visible */
+      top: 60px;
+      right: 20px;
+      background-color: #c6defa;  /* Matches the hamburger background */
+      color: #ffffff;
+      display: none; /* Initially hidden */
+      flex-direction: column;
+      gap: 10px;
+      z-index: 10;
+      padding: 10px;
+      border-radius: 8px;
+    }
+  
+    /* Shows the dropdown if menuOpen is true */
+    .dropdown-menu.show {
+      display: flex;
+    }
+  }
+  
+  /* On larger screens, always show the navigation links and hide the hamburger */
+  @media (min-width: 769px) {
+    .hamburger {
+      display: none; /* Hides the hamburger on larger screens */
+    }
+  
+    .links {
+      display: flex; /* Shows the nav links */
+    }
+    
+
+}

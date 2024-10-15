@@ -1,0 +1,30 @@
+
+<main class="main">
+  <header class="header">
+    <div class="content">
+      <nav class="nav">
+        <ul class="links">
+          <li><a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a></li>
+          <li><a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a></li>
+          <li><a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="hamburger" (click)="toggleMenu()">
+        &#9776; <!-- Hamburger icon -->
+      </div>
+      <div class="dropdown-menu" [class.show]="menuOpen">
+        <a routerLink="/home" routerLinkActive="active" ariaCurrentWhenActive="page">Home</a>
+        <a routerLink="/about" routerLinkActive="active" ariaCurrentWhenActive="page">About</a>
+        <a routerLink="/contact" routerLinkActive="active" ariaCurrentWhenActive="page">Contact</a>
+      </div>
+    </div>
+  </header>
+  
+  <!-- Content from the HomeComponent will be rendered here -->
+  <section class="page-content">
+    
+  </section>
+
+
+  <router-outlet />
+</main>

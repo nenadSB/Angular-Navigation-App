@@ -1,0 +1,169 @@
+/* Hero section styles */
+.hero {
+  background-color: #4a90e2; /* Hero background color */
+  color: white;
+  text-align: center;
+  padding: 60px 20px;
+  border-radius: 8px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+  display: flex; /* Use flexbox for better alignment */
+  flex-direction: column; /* Stack items vertically */
+  align-items: center; /* Center items horizontally */
+  justify-content: center; /* Center items vertically if there's space */
+  width: 100%; /* Ensure it takes full width */
+  box-sizing: border-box; /* Include padding in width calculations */
+}
+  
+  .hero-title {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+  }
+  
+  .hero-description {
+    font-size: 1.2rem;
+    margin-bottom: 30px;
+    text-align: center; /* Center the text */
+    width: 100%; /* Ensure it takes full width */
+    max-width: 800px; /* Set a max width for better readability */
+    margin-left: auto; /* Centering adjustments */
+    margin-right: auto; /* Centering adjustments */
+    padding: 0 20px; /* Add some padding for smaller screens */
+}
+  .cta-button {
+    background-color: #f5a623; /* Button background */
+    color: white;
+    padding: 15px 30px;
+    font-size: 1.2rem;
+    border: none;
+    border-radius: 5px;
+    text-decoration: none;
+    transition: background-color 0.3s;
+  }
+  
+  .cta-button:hover {
+    background-color: #ffd700; /* Hover effect */
+  }
+  
+  /* Skills section styles */
+  .skills {
+    margin-top: 40px;
+    text-align: center;
+  }
+  
+  .skills h3 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .skill-cards {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .skill-card {
+    background-color: #f0f4f8; /* Card background color */
+    border-radius: 8px;
+    padding: 20px;
+    width: 200px; /* Card width */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  .skill-card h4 {
+    margin: 10px 0;
+  }
+  
+  .skill-card p {
+    font-size: 0.9rem;
+  }
+  .page-content {
+    margin-top: 40px; /* Space between nav and content */
+    padding: 20px;
+    width: 100%;
+    max-width: 1200px; /* Max width for larger screens */
+    text-align: center; /* Center text */
+    background-color: #ffffff; /* Background color */
+    border-radius: 10px; /* Rounded corners */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Soft shadow */
+    box-sizing: border-box; /* Include padding in width calculations */
+}
+
+
+.content-title {
+    font-size: 2.5rem; /* Title font size */
+    color: #333; /* Dark text color */
+    margin-bottom: 20px; /* Space below title */
+}
+
+.content-description {
+    font-size: 1.2rem; /* Description font size */
+    color: #555; /* Medium text color */
+    margin-bottom: 30px; /* Space below description */
+    line-height: 1.6; /* Line height for better readability */
+}
+
+.features {
+    display: flex; /* Flexbox for feature cards */
+    justify-content: center; /* Center align cards */
+    flex-wrap: wrap; /* Wrap cards if necessary */
+}
+
+.feature-card {
+    background-color: #f5f5f5; /* Light background for cards */
+    border-radius: 10px; /* Rounded corners */
+    padding: 20px; /* Padding inside cards */
+    margin: 10px; /* Space between cards */
+    width: 250px; /* Fixed width for cards */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+    transition: transform 0.3s; /* Smooth hover effect */
+}
+
+.feature-card:hover {
+    transform: translateY(-5px); /* Raise card on hover */
+}
+
+.feature-card h3 {
+    color: #4a90e2; /* Header color for cards */
+    font-size: 1.5rem; /* Header font size */
+    margin-bottom: 10px; /* Space below header */
+}
+
+.feature-card p {
+    color: #777; /* Text color for features */
+    line-height: 1.5; /* Line height for better readability */
+}
+.hamburger {
+  font-size: 2rem;
+  cursor: pointer;
+  color: #ffffff;
+  margin-left: auto; /* Align to the right */
+}
+
+.dropdown-menu {
+  display: none; /* Hide the menu by default */
+  position: absolute;
+  right: 20px; /* Adjust as needed */
+  background-color: #4a90e2; /* Match header background */
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.2);
+  z-index: 1000; /* Ensure it sits above other content */
+  margin-top: 10px; /* Space below the hamburger */
+}
+
+.dropdown-menu.show {
+  display: block; /* Show the menu when open */
+}
+
+.dropdown-menu a {
+  display: block; /* Stack links vertically */
+  color: #ffffff; /* Link color */
+  padding: 10px 20px; /* Padding for links */
+  text-decoration: none; /* No underline */
+}
+
+.dropdown-menu a:hover {
+  background-color: #f5a623; /* Hover effect */
+}
+
+  
